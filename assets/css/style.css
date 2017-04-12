@@ -28,21 +28,36 @@
 		list-style: none;
 	}
 
-	/*navigation buttons */
-	header nav ul li{
-		display: inline-block;
-		/* padding: 5px; */
-	}
+	/*navigation buttons formatting */
+		header nav ul li{
+			display: inline-block;
+			/* padding: 5px; */
+		}
 
-	/*Navigation separators with using border*/
-	/*header nav ul li+li {
-		border-left: 1px solid #000000
-	}*/
+		header nav ul li a:link{
+			color: #777777;
+			text-decoration: none;
+		}
 
-	/*Navigation separators using symbol*/
-	header nav ul li:not(:first-child):before {
-	    content: " | ";
-	}
+		header nav ul li a:visited{
+			color: #777777;
+			text-decoration: none;
+		}
+
+		header nav ul li a:hover{
+			text-decoration: underline;
+			font-weight: bold;
+		}
+
+		/*Navigation separators with using border*/
+		/*header nav ul li+li {
+			border-left: 1px solid #000000
+		}*/
+
+		/*Navigation separators using symbol*/
+		header nav ul li:not(:first-child):before {
+		    content: " | ";
+		}
 
 	/*wrapper for all content exclusive from body and .main inclusive of header and footer elements*/
 	.wrapper{
