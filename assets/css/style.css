@@ -1,107 +1,107 @@
 /* common on all pages */
+	/*Setting up default font styling and text colour.*/
+	body{
+		font-family: "Arial", "helvitica Neue", Helvetica, sans-serif;
+		color: #777777;
+	}
 
-body{
-	font-family: "Arial", "helvitica Neue", Helvetica, sans-serif;
-	color: #777777;
-}
+	header{}
 
-header{}
+	footer{
+		clear: both;
+		background-color: #666666;
+	}
 
-footer{
-	clear: both;
-	background-color: #666666;
-}
+	h1{
+		font-size: 2em;
+	}
 
-h1{
-	font-size: 2em;
-}
+	h2{
+		font-size: 1.5em;
+	}
 
-h2{
-	font-size: 1.5em;
-}
+	h3{
+		font-size: 1.17em;
+	}
 
-h3{
-	font-size: 1.17em;
-}
+	ul{
+		list-style: none;
+	}
 
-ul{
-	list-style: none;
-}
+	/*navigation buttons */
+	header nav ul li{
+		display: inline-block;
+		/* padding: 5px; */
+	}
 
-/*navigation buttons */
-header nav ul li{
-	display: inline-block;
-	padding: 5px;
-}
+	/*Navigation separators with using border*/
+	/*header nav ul li+li {
+		border-left: 1px solid #000000
+	}*/
 
-/*Navigation separators with using border*/
-/*header nav ul li+li {
-	border-left: 1px solid #000000
-}*/
+	/*Navigation separators using symbol*/
+	header nav ul li:not(:first-child):before {
+	    content: " | ";
+	}
 
-/*Navigation separators using symbol*/
-header nav ul li:not(:first-child):before {
-    content: " | ";
-}
+	/*wrapper for all content exclusive from body and .main inclusive of header and footer elements*/
+	.wrapper{
+		max-width: 960px;
+		margin: auto;
+	}
 
-/*wrapper for all content exclusive from body and .main inclusive of header and footer elements*/
-.wrapper{
-	max-width: 960px;
-	margin: auto;
-}
+	.name{
+		background-color: #008dd2;
+		color: #ffffff;
+	}
 
-.name{
-	background-color: #008dd2;
-	color: #ffffff;
-}
-
-/*main body background*/
-.main{
-	background-image: url(../images/gray.png);
-}
+	/*main body background*/
+	.main{
+		background-image: url(../images/gray.png);
+	}
 
 
-/*wrapper for all contect exclusivce from body, .main, and footer elements.*/
-.flexbox{
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-}
+	/*wrapper for all contect exclusivce from body, .main, and footer elements.*/
+	.flexbox{
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+	}
 
-/*wrapper for main body right column for all pages*/
-#connect{
-	width: 270px;
-}
+	/*wrapper for main body right column for all pages*/
+	#connect{
+		width: 270px;
+	}
 
-/*connection buttons*/
-#connect ul li{
-	display: inline-block;
-}
+	/*connection buttons*/
+	#connect ul li{
+		display: inline-block;
+	}
 
-/*wrapper for main body left column for all pages*/
-.mainleft{
-	width: 650px;
-}
+	/*wrapper for main body left column for all pages*/
+	.mainleft{
+		width: 650px;
+	}
 
-#copyright{
- color: #ffffff;
- text-align: center;
-}
+	#copyright{
+	 color: #ffffff;
+	 text-align: center;
+	}
 
 /*applies to multiple attributes*/
 
-h1, h2, h3{
-	font-weight: bold;
-	font-family: "Georgia", Times, "Times New Roman", serif;
-}
+	h1, h2, h3{
+		font-weight: bold;
+		font-family: "Georgia", Times, "Times New Roman", serif;
+	}
 
-h2, h3{
-	color:#008dd2;
-}
+	h2, h3{
+		color:#008dd2;
+	}
 
-.mainleft, #connect{
-	background-color: #ffffff;
-}
+	.mainleft, #connect{
+		background-color: #ffffff;
+	}
 
 /*Unique on each page */
 /*index.html*/
