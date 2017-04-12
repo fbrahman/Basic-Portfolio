@@ -163,3 +163,6 @@
 	}
 
 /*portfolio.html*/
+	#portfolio ul li{
+		position: relative;
+	}
