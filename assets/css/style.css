@@ -89,9 +89,16 @@
 	}
 
 	/*connection buttons*/
-	#connect ul li{
-		display: inline-block;
-	}
+		/*Display inline implementation icons in one row but not centered*/
+		#connect ul li{
+			/*display: inline-block;*/
+		}
+
+		/*Flexbox implementation allows the space to be distributed evenly*/
+		#connect ul{
+			display: flex;
+			justify-content: space-around;
+		}
 
 	/*wrapper for main body left column for all pages*/
 	.mainleft{
@@ -163,6 +170,24 @@
 	}
 
 /*portfolio.html*/
-	#portfolio ul li{
+	.floatedimg{
 		position: relative;
+	/*	display: -webkit-flex;
+		display: flex;
+		-webkit-align-items: center;
+		align-items: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+		-webkit-flex-flow: column wrap;
+		flex-flow: column wrap;
+		-webkit-align-content: stretch;
+		align-content: stretch;*/
+	}
+
+	.floatedimg p{
+		position: absolute;
+		left: 10px;
+		bottom: 5px;
+		background-color: #008dd2;
+		color: #ffffff;
 	}
