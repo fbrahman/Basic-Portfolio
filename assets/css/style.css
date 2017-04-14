@@ -36,6 +36,11 @@
 	}
 
 	/*navigation buttons formatting */
+
+		header nav{
+		margin-right: 2%;	
+		}
+
 		header nav ul li{
 			display: inline-block;
 			/* padding: 5px; */
@@ -66,6 +71,7 @@
 		    content: " | ";
 		}
 
+
 	/*wrapper for all content exclusive from body and .main inclusive of header and footer elements*/
 		.wrapper{
 			max-width: 960px;
@@ -76,6 +82,8 @@
 		background-color: #008dd2;
 		color: #ffffff;
 		padding: 1.75%;
+		margin-left: 2%;
+		margin-top: .5%;
 	}
 
 	/*main body background and border*/
@@ -92,13 +100,21 @@
 	.flexbox{
 		display: flex;
 		justify-content: space-between;
+	}
+
+	header .flexbox{
 		align-items: baseline;
 	}
 
-	/*wrapper for main body right column for all pages*/
-	#connect{
-		width: 270px;
+	.main .flexbox{
+		align-items: flex-start;
 	}
+
+	/*wrapper for main body right column for all pages*/
+		#connect{
+			width: 270px;
+			padding: 2%;
+		}
 
 	/*connection buttons*/
 		/*Display inline implementation icons in one row but not centered*/
@@ -139,6 +155,7 @@
 		border-width: 2px;
 		border-style: solid;
 		border-color: #dddddd;
+		margin: 2%;
 	}
 
 /*Unique on each page */
