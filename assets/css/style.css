@@ -92,6 +92,8 @@
 			border-bottom-width: 6px;
 			border-color: #008dd2;
 			border-style: solid;
+			flex:1;
+			height: 100%;
 		}
 
 
@@ -203,8 +205,15 @@
 	}
 
 /*portfolio.html*/
+	#flexprojects{
+		display: flex;
+		flex-wrap: wrap;
+		/*justify-content: space-around;*/
+		}
+
 	.floatedimg{
 		position: relative;
+		margin: 2%;
 	/*	display: -webkit-flex;
 		display: flex;
 		-webkit-align-items: center;
@@ -219,8 +228,14 @@
 
 	.floatedimg p{
 		position: absolute;
-		left: 10px;
-		bottom: 5px;
+		left: 0px;
+		bottom: 15%;
 		background-color: #008dd2;
 		color: #ffffff;
+		text-align: center;
+		font-size: 1.5em;
+		padding-bottom: 2%;
+		padding-top: 2%;
+		width: 100%;
+
 	}
